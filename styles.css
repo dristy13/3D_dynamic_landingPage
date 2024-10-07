@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+    background-color: rgb(27, 11, 61);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    color: black;
+    padding: 20px 60px 40px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-items: space-evenly;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.cta-button {
+    background: #e67e22;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    transition:  0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #d35400;
+    transform: scale(1.05);
+}
+
+.features, .testimonials, .about, .contact {
+    padding: 80px 0;
+    background: white;
+    position: relative;
+    margin-top: -100px; /* Overlap with previous sections */
+    z-index: 1;
+}
+
+.features h2, .testimonials h2, .about h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature-card, .testimonial {
+    background: #0e0248e2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(20, 4, 4, 0.997);
+    margin: 10px;
+    flex: 1 1 250px;
+    transition: transform 0.3s;
+    color: #ccc;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.testimonial.active {
+    opacity: 1;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background: #2980b9;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+}
+#photo{
+    background-image: url("https://images.hdqwalls.com/wallpapers/desert-night-minimal-4k-hp.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(156, 106, 13, 0.863);
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+#learn{
+    height: 30px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c82aa;
+    border-radius: 5px;
+    margin: 120px 120px 120px;
+}
+
+
+
+
+
+
